@@ -4,13 +4,24 @@
 
 int main(int argc, char const *argv[])
 {
-    int lines=0, words=0, chars=0;
-    char current, memory='5';
+    int aux=0, i=0, j=0;
+    char proibted[12][12]={"gratuito", "atencao", "urgente", "imediato", "zoombie", "oferta", "dinheiro", "renda", "fundo", "limitado", "ajuda", "SOS"}, lineChar[76]={0};
     
-    //current=getchar();
-    current=memory;
-    printf("%c %c", current, memory);
+    for ( i = 0; i < 20; i++)
+    {
+        lineChar[i]=getchar();
+        //printf("%i", current[i]);
+    }
 
+    for ( i = 0; i < 12; i++)
+    {
+        if(strstr(lineChar, proibted[i])){
+        aux++;
+    }
+    
+    }
+    printf("%i", aux);
+    
 
     return 0;
 }
