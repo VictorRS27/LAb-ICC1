@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 int main(int argc, char const *argv[])
 {
     char proibted[12][12]={"gratuito", "atencao", "urgente", "imediato", "zoombie", "oferta", "dinheiro", "renda", "fundo", "limitado", "ajuda", "SOS"}, lineChar[76]={0};
